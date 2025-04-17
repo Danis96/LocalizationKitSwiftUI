@@ -15,13 +15,15 @@ let package = Package(
             targets: ["LocalizationKitSwiftUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/hmlongco/Factory", from: "2.4.3")
+        .package(url: "https://github.com/hmlongco/Factory", from: "2.4.3"),
+        .package(path: "../SQAUtility"),
     ],
     targets: [
         .target(
             name: "LocalizationKitSwiftUI",
             dependencies: [
                 .product(name: "Factory", package: "Factory"),
+                "SQAUtility",
             ],
         ),
         .testTarget(

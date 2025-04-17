@@ -5,7 +5,7 @@
 //  Created by Danis Preldzic on 17. 4. 2025..
 //
 
-public protocol LocalizationManaging: AnyObject {
+public protocol LocalizationManagerProtocol: AnyObject {
     var currentLocale: String { get }
     var configuration: LocalizationConfigurationProtocol { get }
     
