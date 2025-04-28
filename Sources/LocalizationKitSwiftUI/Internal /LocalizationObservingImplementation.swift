@@ -29,6 +29,8 @@ public struct LocalizationObservingViewModifier: ViewModifier {
     public init(action: @escaping () -> Void) {
         self.action = action
     }
+
+    
     
     public func body(content: Content) -> some View {
         content
